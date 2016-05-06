@@ -1,0 +1,15 @@
+<md-list>
+    <md-list-item class="md-2-line" ng-repeat="party in parties">
+        <md-checkbox ng-model="item.done"></md-checkbox>
+        <div class="md-list-item-text">
+            <h3>{{party}}</h3>
+            <p>{{item.description}}</p>
+        </div>
+    </md-list-item>
+</md-list>
+
+{{contract}}
+
+<md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="click()">
+    <ng-md-icon icon="add"></ng-md-icon>
+</md-button>
